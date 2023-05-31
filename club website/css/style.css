@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family : 'Muli' , sans-serif ;
+}
+
+
+h1 {
+    font-size: 2.5rem ;
+    font-weight: 700;
+    color: rgb(35, 35,85);
+}
+
+span {
+    font-size: 1.1rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color:rgb(24, 24,49);
+}
+
+
+/* navigation*/
+nav {
+    position: fixed;
+    width: 100%;
+    background-color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 5vw;
+    box-shadow: 2px 20px 20px rgba(0,0, 0,0.15);
+
+}
+
+nav img{
+    border-radius: 60px;
+    width: 70px;
+    cursor : pointer ;
+  
+ 
+}
+
+nav .navigation{
+    display: flex;
+}
+
+
+nav h2{
+    color:#fff;
+    font-size: 3rem;
+    font-style: oblique;
+    text-align:right;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+
+nav .navigation ul{
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-right: 1px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color:red; 
+    font-size: 15px;
+    font-weight:50;
+    transition:0.3s ease ; 
+    padding: 5px 7px;
+    background-color: #0c0c0c;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover{
+    color:magenta ;
+    
+}
+
+/*home */
+
+
+#Home {
+    background-image: url("..//images/dramaclubband.webp");
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    padding:3vw 3vw 3vw 3vw; 
+   
+}
+
+#abouthome {
+    background-image: url("..//images/20220618063505_IMG_7503.JPG");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+    padding:3vw 3vw 3vw 3vw; 
+}
+#abouthome .detail{
+    text-align: center;
+}
+#About h1{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 2rem;
+    text-decoration-color: black;
+}
+
+#About .About-box .types img{
+    border-radius: 180px;
+    width: 200px;
+}
+
+#About{
+    padding:3vw 3vw 3vw 3vw;
+    text-align: center;
+    background-color:#fff;
+}
+#About .About-box{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-gap: 2px;
+    margin-top: 8px;
+    justify-content:center;
+
+
+}
+#About .About-box .types{
+    padding:1vw 1vw 1vw 1vw;
+}
+#About p{
+    color:#0c0c0c;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    text-decoration:wavy;
+}
+
+
+/*
+#About .btn a{
+    text-decoration:#0c0c0c;
+    font-size: 1rem;
+    padding: 3px 8px;
+    background-color:aqua;
+    border-radius: 4px;
+    margin-left: 35rem;
+    margin-top: 5px;
+}  
+*/
+
+#Teams .team-box .profile img{
+    border-radius: 180px;
+    width: 200px;
+}
+
+#Teams{
+    padding-top: 4px;
+    text-align: center;
+    background-color:#fff;
+}
+#Teams .team-box{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 3px;
+    margin-top: 35px;
+
+}
+#Teams .team-box .profile{
+   
+    padding:2vw 1vw 2vw 3vw;
+}
+
+.links a{
+    padding: 7px 8px;
+    border:1px solid rgb(24, 24,100);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.links a:hover{
+    border:1px solid rgb(24, 24,100);
+    color: #fff;
+    cursor: pointer;
+    background-color: blue;
+}
+
+footer{
+    padding:3vw;
+    background-color:indigo;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 8px;
+
+}
+footer h3{
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+footer li{
+    font-style: oblique;
+    list-style: none;
+    color:blanchedalmond;
+    padding:5px 3px;
+    font-size:15px;
+}
+footer li:hover{
+    color: gold;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+footer p{
+    color:gold;
+    padding-top: 5px;
+}
+footer .send a{
+    text-decoration: none;
+    font-size: 15px;
+    padding:5px 20px;
+    margin-top: 16px;
+}
+footer .send a.yellow{
+    color:#fff;
+    background:#FDC93B;
+    transition: 0.3s ease;
+}
+footer .send a.yellow:hover{
+    color:rgb(21,21,100);
+    background: #fff;
+}
+footer input{
+    color:brown;
+    width:300px;
+   padding:5px 20px;
+}
+
+footer .made{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+
+footer .made .links a{
+   
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    background-color: #fff;
+}
+footer .made .links a:hover{
+  
+    color: #fff;
+    cursor: pointer;
+    background-color: blue;
+}
+
